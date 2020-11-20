@@ -11,7 +11,7 @@
 >    **Required**
 >    - **Discord Bot Token**, here's a [guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot) for reference
 >
->    **Optional**
+>    ***Optional***
 >    - **Giphy API Key**, go [here](https://developers.giphy.com/) and press `Get Started` to sign up and get a key
 >    - **Discord Announcement Channel ID**, right click the channel in Discord and press `Copy ID`
 1. Download BouncerBot project
