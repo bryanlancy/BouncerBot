@@ -14,6 +14,7 @@
 >    ***Optional***
 >    - **Giphy API Key**, go [here](https://developers.giphy.com/) and press `Get Started` to sign up and get a key
 >    - **Discord Announcement Channel ID**, right click the channel in Discord and press `Copy ID`
+
 1. Download BouncerBot project
 
     `git clone https://github.com/bryanlancy/BouncerBot.git`
@@ -48,8 +49,8 @@
     - `~poll` - prints poll with given week's topics to aid in creation of study guide
     - `~motivate` - sends motivational with, *hopefully* funny gif \**Giphy API Key Required*
 
-
-### ▬▬▬▬▬_TODO_
+------------------------------------------------------------
+### _TODO_
 - Need to Add:
     - [ ] Standard help message layout (Title, syntax, description, example)
     - [ ] Handling for bot hosts who dont provide Giphy key or announcement channels, try...catch
