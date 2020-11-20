@@ -9,11 +9,11 @@
 > *Before beginning, you will need a few things:*
 >
 >    **Required**
->    - Discord Bot Token
+>    - **Discord Bot Token**, here's a [guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot) for reference
 >
 >    **Optional**
->    - Giphy API Key
->    - Discord Announcement Channel ID
+>    - **Giphy API Key**, go [here](https://developers.giphy.com/) and press `Get Started` to sign up and get a key
+>    - **Discord Announcement Channel ID**, right click the channel in Discord and press `Copy ID`
 1. Download BouncerBot project
 
     `git clone https://github.com/bryanlancy/BouncerBot.git`
@@ -32,7 +32,7 @@
     ```
 
 1. Use the command `npm install` to download all required node modules
-1. Use the command `node index.js` to start the bot :robot:  
+1. Use the command `node index.js` to start the bot :robot:
     > The message `BouncerBot - Online` will print to  
     > the console when the bot successfully comes online
 
