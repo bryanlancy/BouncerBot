@@ -14,7 +14,7 @@
 >    - **Giphy API Key**, go [here](https://developers.giphy.com/) and press `Get Started` to sign up and get a key
 >    - **Discord Announcement Channel ID**, right click the channel in Discord and press `Copy ID`
 
-1. Download BouncerBot project
+1. Clone BouncerBot project
 
     `git clone https://github.com/bryanlancy/BouncerBot.git`
 
