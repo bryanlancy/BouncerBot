@@ -6,7 +6,7 @@
 >   - members without roles
 
 ## Setup
-- create config.json in bot's root folder
+- create config.json in bot's root folder  
     `{"prefix" : "prefix"}`
 
 - `npm install`
