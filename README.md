@@ -58,16 +58,19 @@
         - [ ] Add confirmation message
             - [ ] Confirm confirmation message comes from same user as original sender
         - [ ] Add argument for number of days to check for
+    - [ ] Edit Command: Motivate
+        - [ ] Should take argument for destination channel
     - [ ] Add Command: Announce
         - [ ] Takes argument for message to send and serer to send to
         - [ ] Should send embeds or standard messages
         - [ ] Should take optional argument for destination channel
             - if none provided look for channel labeled 'announcement'
             - if no channel exist return error message with reason
+        - [ ] Perms to use command?
 
 
 
 - Code Cleanup:
     - [ ] Condense reminders, move into folder, one file? separate into different files?
     - [ ] Move reminders from cron jobs? Persistence of times?
-    - [ ] Break commands into separate files, modules
+    - [ ] Move commands into separate files, modules
