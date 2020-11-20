@@ -19,7 +19,7 @@
     `git clone https://github.com/bryanlancy/BouncerBot.git`
 
 1. Create config.json in bot's root folder  
-    ```json
+    ```js
     {
         "prefix" : "~",
         "token" : "<DiscordBotToken>",
@@ -31,8 +31,8 @@
     }
     ```
 
-1. `npm install`
-1. `node index.js`
+1. Use the command `npm install` to download all required node modules
+1. Use the command `node index.js` to start the bot
 
 ## Command Reference
 - Type `~help` or `~h` for a list of more commands
