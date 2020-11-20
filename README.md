@@ -1,5 +1,6 @@
 # BouncerBot
 > Private Discord server management made easy.
+> ### Features
 > - Find and kick all users without roles, can be easily automated with cron jobs
 > - Get server summary
 >   - \# of members
@@ -7,11 +8,9 @@
 
 ## Setup
 > *Before beginning, you will need a few things:*
->
->    **Required**
+> #### Required
 >    - **Discord Bot Token**, here's a [guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html) for reference
->
->    ***Optional***
+> #### *Optional*
 >    - **Giphy API Key**, go [here](https://developers.giphy.com/) and press `Get Started` to sign up and get a key
 >    - **Discord Announcement Channel ID**, right click the channel in Discord and press `Copy ID`
 
@@ -64,12 +63,19 @@
         - [ ] Add argument for number of days to check for
     - [ ] Edit Command: Motivate
         - [ ] Should take argument for destination channel
+        - [ ] How to match gif to message, ideally without hardcoding gifs
+            - [ ] With current selection process it's hard to gurantee gif matches message
+            - [ ]
     - [ ] Add Command: Announce
         - [ ] Takes argument for message to send and serer to send to
         - [ ] Should send embeds or standard messages
         - [ ] Should take optional argument for destination channel
-            - if none provided look for channel labeled 'announcement'
-            - if no channel exist return error message with reason
+            - [ ] if none provided look for channel labeled 'announcement'
+            - [ ] if no channel exist return error message with reason
+        - [ ] Should take optional argument to include gif
+            - [ ] Search for gif based off of message keywords?
+            - [ ] If can't reliably pick a good gif automatically, return a few and allow user to pick
+                - [ ] Ex. User selects 1-3 to make choice, or refresh/next to show more choices
         - [ ] Perms to use command?
 
 
