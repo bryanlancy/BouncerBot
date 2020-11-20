@@ -9,8 +9,6 @@ const intents = new Intents([
 const client = new Client({ ws: { intents } });
 //Import config
 const config = require('./config.json');
-//TODO ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 
 //? Define sendReminder Function
 function sendReminder() {
@@ -39,13 +37,11 @@ function sendReminder() {
                 channel.send("Don't forget to check in! @everyone");
                 channel.send(embed)
             }))
-    //TODO: Delete below when above code is confirmed to work
-    //!OLD - DELETE BELOW
-
 }
 //? Log new client instance in, then send reminder
 client.login(config.token).then(sendReminder);
 
 //!BAD CODE BELOW
 //TODO: async? rather than wait for timer to destroy client, should wait for sendReminder to complete then immediately destroy
+//TODO: does channel.send return a promise?
 setTimeout(function () { client.destroy() }, 5000);
