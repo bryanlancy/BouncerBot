@@ -19,7 +19,7 @@
     `git clone https://github.com/bryanlancy/BouncerBot.git`
 
 1. Create config.json in bot's root folder
-    ```JSON5
+    ``` json
     {
         "prefix" : "~",
         "token" : "<DiscordBotToken>",
