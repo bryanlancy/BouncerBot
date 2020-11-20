@@ -62,7 +62,7 @@ let botCommand = (m, c, a) => {
                 let query = 'motivation';
                 let rating = 'g';
                 let limit = 10;
-                helix.get(`search?q=${query}&api_key=${config.giphyAPIKey}&rating=${rating}&limit=${limit}`).then(response => {
+                helix.get(`search?q=${query}&api_key=${config.giphyKey}&rating=${rating}&limit=${limit}`).then(response => {
                     let url = response.data.data[Math.floor(Math.random() * limit)].url;
                     console.log(url);
                     m.channel.send(url);
