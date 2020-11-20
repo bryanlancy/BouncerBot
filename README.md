@@ -20,10 +20,11 @@
     `git clone https://github.com/bryanlancy/BouncerBot.git`
 
 1. Create a **config.json** file in the bot's root folder
-    ``` json
+    ```json
     {
-        "prefix" : "~",
-        "token" : "<DiscordBotToken>",
+        "prefix": "~",
+        "botName": "BouncerBot",
+        "token": "<DiscordBotToken>",
         "giphyKey" : "<GiphyAPIKey>",
         "announcementChannels" : [
             "<DiscordChannelID>",
@@ -34,13 +35,13 @@
 
 1. Use the command `npm install` to download all required node modules
 1. Use the command `node index.js` to start the bot :robot:
-    > The message `BouncerBot - Online` will print to  
+    > The message `BouncerBot - Online` will print to
     > the console when the bot successfully comes online
 
 ## Command Reference
 - Type `~help` or `~h` for a list of more commands
 - Add `help` to the end of a command for help with that command
-    - All commands? just help, then help explains the rest?  
+    - Explain all commands here? just help, then help explains the rest?
 
     *If included will go into more detail in readme*
     - `~hello` - reaction testing
@@ -51,7 +52,9 @@
 
 ------------------------------------------------------------
 ### _TODO_
+#### *►Move TODO list out of README◄*
 - Need to Add:
+    - [ ] Verify setup process, elaborate or fix as needed
     - [ ] Standard help message layout (Title, syntax, description, example)
     - [ ] Handling for bot hosts who dont provide Giphy key or announcement channels, try...catch
     - [ ] Edit Command: Bounce
