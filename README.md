@@ -49,7 +49,7 @@
     - `~motivate` - sends motivational with, *hopefully* funny gif \**Giphy API Key Required*
 
 
-### _TODO_
+### ▬▬▬▬▬_TODO_
 - Need to Add:
     - [ ] Standard help message layout (Title, syntax, description, example)
     - [ ] Handling for bot hosts who dont provide Giphy key or announcement channels, try...catch
