@@ -1,6 +1,6 @@
 # BouncerBot
 > Private Discord server management made easy.
-> - Find and kick all users without roles
+> - Find and kick all users without roles, can be easily automated with cron jobs
 > - Get server summary
 >   - \# of members
 >   - members without roles
@@ -18,7 +18,7 @@
 
     `git clone https://github.com/bryanlancy/BouncerBot.git`
 
-1. Create config.json in bot's root folder
+1. Create **config.json** in bot's root folder
     ``` json
     {
         "prefix" : "~",
@@ -46,6 +46,11 @@
     - [ ] Standard help message layout (Title, syntax, description, example)
     - [ ] Handling for bot hosts who dont provide Giphy key or announcement channels
     - [ ] Move reminders from cron jobs? Persistence of times?
+    - [ ] Command: Bounce
+        - [ ] Add check for users permission's
+        - [ ] Add confirmation message
+            - [ ] Confirm confirmation message comes from same user as original sender
+
 - Code Cleanup:
     - [ ] Condense reminders, move into folder, one file? separate into different files?
     - [ ] Break commands into separate files, modules
