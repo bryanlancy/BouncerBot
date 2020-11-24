@@ -14,7 +14,7 @@ function sendReminder() {
     let hour = date.getHours();
     let min = date.getMinutes();
     //Eastern Time UTC-5
-    let estTimestamp = `${date.getHours() - 5}:${min} EST`;
+    let estTimestamp = `${hour - 5}:${min} EST`;
     //Pacific Time UTC-8
     let pstTimeStamp = `${hour - 8}:${min} PST`;
 
