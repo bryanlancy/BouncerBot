@@ -14,7 +14,7 @@ const axios = require('axios');
 //?For local testing, to ensure bot successful comes online
 client.once('ready', () => {
 
-    console.log('BouncerBot - Online');
+    console.log(`${config.botName} - Online`);
 });
 let botCommand = (m, c, a) => {
     //TODO Move server commands to difference files?, pull out repetitive code? both?
