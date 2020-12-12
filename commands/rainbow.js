@@ -1,5 +1,6 @@
-function rainbow() {
-
+function rainbow(bot) {
+    console.log(bot.client.guilds)
+            //console.log(mes.guild)
 }
 
 try {
