@@ -1,5 +1,5 @@
-function hello() {
-
+function hello(mes) {
+    mes.react(`👋`)
 }
 
 try {
