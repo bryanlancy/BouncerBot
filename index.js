@@ -1,6 +1,6 @@
-const bB = new (require('./Bot.js'))(true) //? Bot instantiation
+const bB = new (require('./config/Bot.js'))(true) //? Bot instantiation
 bB.client.once('ready', () => {
-    console.log(`${bB.config.botName} - Online`) //?For local testing, to ensure bot successful comes online
+    console.log(`${bB.config.botName} - Online`) //? For local testing, to ensure bot successfully comes online
 })
 bB.client.on('message', message => {
     if (message.content.startsWith(`${bB.config.prefix}`)) {

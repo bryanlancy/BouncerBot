@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js')
-const topics = require('../topics.json')
+const topics = require('./topics.json')
 
 function poll(mes, args) {
     let embed = new MessageEmbed()
