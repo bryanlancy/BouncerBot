@@ -1,4 +1,4 @@
-const bB = new (require('./botSetup.js'))(true) //? Bot instantiation
+const bB = new (require('./Bot.js'))(true) //? Bot instantiation
 bB.client.once('ready', () => {
     console.log(`${bB.config.botName} - Online`); //?For local testing, to ensure bot successful comes online
 })
