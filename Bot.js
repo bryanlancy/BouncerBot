@@ -9,23 +9,23 @@ class Bot {
         this.config = config
         this.client = new Client({ ws: { intents } })
         //! Option for lightweight client if needed
-        if (addCommands) this.addCommands()
-    }
-    static addCommands() {
-        for (const c in commands) {
-            if (!this.hasOwnProperty[c]) this[c] = commands[c]
-        }
-        this.parseCommand = function(message){
-            const args = message.content.slice(bB.config.prefix.length).trim().split(/ +/g)
-            const command = args.shift().toLowerCase()
-            return [command, args]
-        }
-        this.botCommand = function(mes, args, com){
-            if(bB.hasOwnProperty(com)){
-                try {
-                    bB[com](mes, args, bB)
-                } catch (error) {
-                    console.log(error)
+        if (addCommands) {
+            for (const c in commands) {
+                if (!this.hasOwnProperty[c]) this[c] = commands[c]
+            }
+            this.parseCommand = function(message){
+                const args = message.content.slice(this.config.prefix.length).trim().split(/ +/g)
+                const command = args.shift().toLowerCase()
+                return [command, args]
+            }
+            this.botCommand = function(message){
+                const [command, args] = this.parseCommand(message)
+                if(this.hasOwnProperty(command)){
+                    try {
+                        this[command](message, args, this)
+                    } catch (error) {
+                        console.log(error)
+                    }
                 }
             }
         }
