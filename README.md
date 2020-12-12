@@ -18,7 +18,7 @@
 
     `git clone https://github.com/bryanlancy/BouncerBot.git`
 
-1. Create a **config.json** file in the bot's root folder
+1. Create a **config.json** file in the bot's config folder
     ```json
     {
         "prefix": "~",
