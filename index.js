@@ -34,9 +34,14 @@ let botCommand = (mes, com, args) => {
     }
 }
 bB.client.on('message', message => {
-    if (message.content.startsWith(`${bB.config.prefix}`)) {
+
+    function parseCommand(message){
         const args = message.content.slice(bB.config.prefix.length).trim().split(/ +/g)
         const command = args.shift().toLowerCase()
+        return [command, args]
+    }
+    if (message.content.startsWith(`${bB.config.prefix}`)) {
+        console.log(parseCommand(message))
         botCommand(message, command, args)
     }
 
