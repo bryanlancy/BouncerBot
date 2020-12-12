@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js")
 
-function server(bot, mes) {
+function server(mes, args, bot) {
     let embedServer = new MessageEmbed()
         .setTitle('**Server Summary**')
         .setColor('#0055ff')
@@ -9,11 +9,11 @@ function server(bot, mes) {
         //TODO: Create more robust process to handle higher counts
         .then(guild => {
             //TODO More robust member search may require multiple fetch's so 'i' is declared here for now
-            let i = 0;
+            let i = 0
             guild.members.fetch()
                 .then(
                     members => {
-                        let list = [];
+                        let list = []
                         for (member of members) {
                             i++
                             if (member[1]._roles.length < 1) {
@@ -25,7 +25,7 @@ function server(bot, mes) {
                         embedServer.addFields(
                             { name: 'Total Members', value: i },
                             { name: 'Users without a role', value: list.length ? list : 'None!' }
-                        );
+                        )
                         mes.channel.send({ embed: embedServer, split: true })
                     })
         }

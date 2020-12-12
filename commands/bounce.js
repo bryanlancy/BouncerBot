@@ -1,7 +1,7 @@
 const { MessageEmbed } = require("discord.js")
 
-function bounce(bot, mes, args) {
-    let daysToKick = 3; //!Number of days to be in server to be eligible for bouncing
+function bounce(mes, args, bot) {
+    let daysToKick = 3 //!Number of days to be in server to be eligible for bouncing
     let embed = new MessageEmbed()
         .setTitle('**Auto-Bounce Summary**')
         .setColor('#0055ff')

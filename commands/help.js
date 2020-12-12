@@ -1,6 +1,6 @@
-function help(message, args) {
+function help(mes, args) {
     console.log('HELP TESTING')
-    message.channel.send("Help yourself.");
+    mes.channel.send("Help yourself.")
 }
 
 try {

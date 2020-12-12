@@ -10,9 +10,9 @@ async function getGiphyURL(key) {
         .then(res => {
             const url = res.data.data[Math.floor(Math.random() * limit)].url
             return url
-        });
+        })
 }
-async function motivate(bot, mes) {
+async function motivate(mes, args, bot) {
     let url = await getGiphyURL(bot.config.giphyKey)
     mes.channel.send(url)
 }
