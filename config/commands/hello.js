@@ -1,9 +1,9 @@
 function hello(mes) {
-    mes.react(`👋`)
+	mes.react(`👋`)
 }
 
 try {
-    module.exports = hello
+	module.exports = hello
 } catch (error) {
-    module.exports = null
+	module.exports = null
 }
