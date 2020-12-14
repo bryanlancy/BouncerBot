@@ -35,7 +35,7 @@ Private Discord server management made easy.
 
 1. Use the command `npm install` to download all required node modules
 1. Use the command `node index.js` to start the bot :robot:
-    > The message `BouncerBot - Online` will print to
+    > The message `BouncerBot - Online` will print to  
     > the console when the bot successfully comes online
 
 ## Command Reference
@@ -48,7 +48,7 @@ Private Discord server management made easy.
     - `~server` - print server info
     - `~bounce` - removes user without roles after certain number of days
     - `~poll` - prints poll with given week's topics to aid in creation of study guide
-    - `~motivate` - sends motivational with, *hopefully* funny gif \**Giphy API Key Required*
+    - `~motivate` - sends motivational mesasge with, *hopefully* funny gif \**Giphy API Key Required*
 
 ------------------------------------------------------------
 ### _TODO_
