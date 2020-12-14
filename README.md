@@ -9,6 +9,7 @@ Private Discord server management made easy.
 ## Setup
 > *Before beginning, you will need a few things:*
 > #### Required
+>    - **Node.js**, [Download here](https://nodejs.org/en/download/)
 >    - **Discord Bot Token**, here's a [guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html) for reference
 > #### *Optional*
 >    - **Giphy API Key**, go [here](https://developers.giphy.com/) and press `Get Started` to sign up and get a key
@@ -34,7 +35,7 @@ Private Discord server management made easy.
 
 1. Use the command `npm install` to download all required node modules
 1. Use the command `node index.js` to start the bot :robot:
-    > The message `BouncerBot - Online` will print to  
+    > The message `BouncerBot - Online` will print to
     > the console when the bot successfully comes online
 
 ## Command Reference
