@@ -1,10 +1,10 @@
 # BouncerBot
-> Private Discord server management made easy.
-> ### Features
-> - Find and kick all users without roles, can be easily automated with cron jobs
-> - Get server summary
->   - \# of members
->   - members without roles
+Private Discord server management made easy.
+## Features
+- Find and kick all users without roles, can be easily automated with cron jobs
+- Get server summary
+  - \# of members
+  - members without roles
 
 ## Setup
 > *Before beginning, you will need a few things:*
@@ -65,7 +65,6 @@
         - [ ] Should take argument for destination channel
         - [ ] How to match gif to message, ideally without hardcoding gifs
             - [ ] With current selection process it's hard to gurantee gif matches message
-            - [ ]
     - [ ] Add Command: Announce
         - [ ] Takes argument for message to send and serer to send to
         - [ ] Should send embeds or standard messages
