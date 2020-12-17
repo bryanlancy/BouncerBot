@@ -23,5 +23,9 @@ const embed = new MessageEmbed()
 
 bBReminder.client
 	.login(bBReminder.config.token)
-	.then(bBReminder.sendMessage(embed))
-	.then(() => bBReminder.client.destroy())
+	.then(bBReminder.sendReminder(embed))
+	.then(x => {
+		console.log('DESTROYING')
+		console.log('res:', x)
+		bBReminder.client.destroy()
+	})
