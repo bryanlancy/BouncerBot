@@ -32,7 +32,6 @@ class Bot {
 	}
 	getTimestamp() {
 		const date = new Date()
-		console.log(date.toJSON())
 		const month = date.getMonth() + 1 //! zero=based value
 		const day = date.getDate()
 		const year = date.getFullYear()
