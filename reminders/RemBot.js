@@ -5,7 +5,7 @@ class RemBot extends Bot {
 		super(false)
 		this.isLive = isLive
 	}
-	sendReminder = function (type, message) {
+	sendReminder = function (type) {
 		return new Promise((res, rej) => {
 			const { month, day, year, est, pst } = this.getTimestamp()
 			console.log(this.getTimestamp())
@@ -50,6 +50,7 @@ class RemBot extends Bot {
 						if (!channel) throw new Error(`Channel not found:\n\t${channel}`)
 						console.log('SENDING')
 						channel.send(message)
+						channel.send(embed)
 					})
 					.then(res())
 					.catch(e => {

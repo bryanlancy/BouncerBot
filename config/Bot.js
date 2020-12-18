@@ -4,7 +4,7 @@ const intents = new Intents([Intents.NON_PRIVILEGED, 'GUILD_MEMBERS'])
 const commands = require('./commands') //? bot command folder, each command imported in commands/index.js
 class Bot {
 	constructor(addCommands = true) {
-		this.config = config
+		this.config = require('./config.json')
 		this.client = new Client({ ws: { intents } })
 		//! Option for lightweight client if needed
 		if (addCommands) {
