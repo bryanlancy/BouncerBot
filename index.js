@@ -3,7 +3,7 @@ bB.client.once('ready', () => {
 	console.log(`${bB.config.botName} - Online`) //? For local testing, to ensure bot successfully comes online
 	console.log(bB.getTimestamp())
 })
-bB.client.on('message', (message) => {
+bB.client.on('message', message => {
 	if (message.content.startsWith(`${bB.config.prefix}`)) {
 		bB.botCommand(message)
 	}
